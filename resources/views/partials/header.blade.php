@@ -10,7 +10,7 @@
 
                 @foreach ($navbarArray as $link)
                     <li>
-                        <a href="">
+                        <a href=" {{ route("$link") }} ">
                             {{ $link }}
                         </a>
                     </li>
