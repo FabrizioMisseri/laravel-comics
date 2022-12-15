@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
+
+
     $data = [
         'navbarArray' => [
             'characters',
@@ -28,6 +30,8 @@ Route::get('/', function () {
             'news',
             'shop'
         ],
+
+        'db' => config('db'),
     ];
 
     return view('home', $data);
