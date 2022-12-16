@@ -40,41 +40,201 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/characters', function () {
-    return view('characters');
+    $data = [
+        'navbarArray' => [
+            'characters',
+            'comics',
+            'movies',
+            'tv',
+            'games',
+            'collectibles',
+            'videos',
+            'fans',
+            'news',
+            'shop'
+        ],
+
+        'db' => config('db'),
+    ];
+    return view('characters', $data);
 })->name('characters');
 
 Route::get('/comics', function () {
-    return view('comics');
+    $data = [
+        'navbarArray' => [
+            'characters',
+            'comics',
+            'movies',
+            'tv',
+            'games',
+            'collectibles',
+            'videos',
+            'fans',
+            'news',
+            'shop'
+        ],
+
+        'db' => config('db'),
+    ];
+    return view('comics', $data);
 })->name('comics');
 
 Route::get('/movies', function () {
-    return view('movies');
+    $data = [
+        'navbarArray' => [
+            'characters',
+            'comics',
+            'movies',
+            'tv',
+            'games',
+            'collectibles',
+            'videos',
+            'fans',
+            'news',
+            'shop'
+        ],
+
+        'db' => config('db'),
+    ];
+    return view('movies', $data);
 })->name('movies');
 
 Route::get('/tv', function () {
-    return view('tv');
+    $data = [
+        'navbarArray' => [
+            'characters',
+            'comics',
+            'movies',
+            'tv',
+            'games',
+            'collectibles',
+            'videos',
+            'fans',
+            'news',
+            'shop'
+        ],
+
+        'db' => config('db'),
+    ];
+    return view('tv', $data);
 })->name('tv');
 
 Route::get('/games', function () {
-    return view('games');
+    $data = [
+        'navbarArray' => [
+            'characters',
+            'comics',
+            'movies',
+            'tv',
+            'games',
+            'collectibles',
+            'videos',
+            'fans',
+            'news',
+            'shop'
+        ],
+
+        'db' => config('db'),
+    ];
+    return view('games', $data);
 })->name('games');
 
 Route::get('/collectibles', function () {
-    return view('collectibles');
+    $data = [
+        'navbarArray' => [
+            'characters',
+            'comics',
+            'movies',
+            'tv',
+            'games',
+            'collectibles',
+            'videos',
+            'fans',
+            'news',
+            'shop'
+        ],
+
+        'db' => config('db'),
+    ];
+    return view('collectibles', $data);
 })->name('collectibles');
 
 Route::get('/videos', function () {
-    return view('videos');
+    $data = [
+        'navbarArray' => [
+            'characters',
+            'comics',
+            'movies',
+            'tv',
+            'games',
+            'collectibles',
+            'videos',
+            'fans',
+            'news',
+            'shop'
+        ],
+
+        'db' => config('db'),
+    ];
+    return view('videos', $data);
 })->name('videos');
 
 Route::get('/fans', function () {
-    return view('fans');
+    $data = [
+        'navbarArray' => [
+            'characters',
+            'comics',
+            'movies',
+            'tv',
+            'games',
+            'collectibles',
+            'videos',
+            'fans',
+            'news',
+            'shop'
+        ],
+
+        'db' => config('db'),
+    ];
+    return view('fans', $data);
 })->name('fans');
 
 Route::get('/news', function () {
-    return view('news');
+    $data = [
+        'navbarArray' => [
+            'characters',
+            'comics',
+            'movies',
+            'tv',
+            'games',
+            'collectibles',
+            'videos',
+            'fans',
+            'news',
+            'shop'
+        ],
+
+        'db' => config('db'),
+    ];
+    return view('news', $data);
 })->name('news');
 
 Route::get('/shop', function () {
-    return view('shop');
+    $data = [
+        'navbarArray' => [
+            'characters',
+            'comics',
+            'movies',
+            'tv',
+            'games',
+            'collectibles',
+            'videos',
+            'fans',
+            'news',
+            'shop'
+        ],
+
+        'db' => config('db'),
+    ];
+    return view('shop', $data);
 })->name('shop');
